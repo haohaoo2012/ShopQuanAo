@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{53F341D6-9A63-465C-81C5-4AFDDC3E61A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>layoutt</RootNamespace>
+    <AssemblyName>layoutt</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44398</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>layoutt.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>layoutt.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.css" />
+    <Content Include="admin.html" />
+    <Content Include="backtop.js" />
+    <Content Include="Chi tiết sản phẩm.html" />
+    <Content Include="chitiet js.js" />
+    <Content Include="Chi tiết sản phẩm.css" />
+    <Content Include="Giới thiệu.css" />
+    <Content Include="Giới thiệu.html" />
+    <Content Include="Hệ thống cửa hàng.css" />
+    <Content Include="Hệ thống cửa hàng.html" />
+    <Content Include="img admin\CG.jpg" />
+    <Content Include="img admin\Doanh thu.jpg" />
+    <Content Include="img admin\Sản phẩm bán chạy.jpg" />
+    <Content Include="img admin\đang giao.jpg" />
+    <Content Include="img sp\4d382942-e345-b200-87a6-001731c4c23b.jpg" />
+    <Content Include="img sp\article_1599790696_226.jpg" />
+    <Content Include="img sp\article_1600312504_726.jpg" />
+    <Content Include="img sp\banner-01_034bc59db22644b1925ddf9a5c917a3f.png" />
+    <Content Include="img sp\d2t9-ao somi-M1SMD090001-nam-totoshop %281%29_thumb.jpg" />
+    <Content Include="img sp\d2t9-quan tay-M1QTY090001-nam-totoshop %283%29_thumb.jpg" />
+    <Content Include="img sp\D2T9-W2ATN090008-AO THUN- NU- TOTOSHOP %285%29_thumb.jpg" />
+    <Content Include="img sp\D2T9_W2ATHN090007_AO THUN NU_TOTOSHOP  %282%29_thumb.jpg" />
+    <Content Include="img sp\D2T9_W2ATN090009_AO THUN NU_TOTOSHOP  %283%29_thumb.jpg" />
+    <Content Include="img sp\IMG_6026_thumb.jpg" />
+    <Content Include="img sp\sb_1593662666_261.jpg" />
+    <Content Include="img thêm\121105735_704563633770134_525379477197212566_n.jpg" />
+    <Content Include="img thêm\D1T7-U1ATN060002-THUN-DOI-TOTOSHOP %282%29_thumb.jpg" />
+    <Content Include="img thêm\D1T8-M1SMD080001-ÁO SƠ MI-NAM-TOTOSHOP  %284%29_thumb.jpg" />
+    <Content Include="img thêm\d2t9-quan short-M1SKK080003-nam-totoshop %282%29_thumb.jpg" />
+    <Content Include="img thêm\d2t9-quan tay-M1QTY090001-nam-totoshop %283%29_thumb.jpg" />
+    <Content Include="img thêm\D3T7-U1AKD060001- ÁO KHOÁC DÙ-NAM-NỮ-TOTOSHOP %283%29_thumb.jpg" />
+    <Content Include="img thêm\d3t9-quan jean-M1QJN080002-nam-totoshop_thumb.jpg" />
+    <Content Include="img thêm\f.JPG" />
+    <Content Include="img thêm\IMG_6026_thumb.jpg" />
+    <Content Include="img thêm\M2SMN050011_1_thumb.jpg" />
+    <Content Include="img thêm\M2STH050009_thumb.jpg" />
+    <Content Include="img thêm\PS.jpg" />
+    <Content Include="img thêm\slide_4.JPG" />
+    <Content Include="img tin tức\article_1444720271_793.jpg" />
+    <Content Include="img tin tức\article_1451009543_179.jpg" />
+    <Content Include="img tin tức\article_1453803818_534.jpg" />
+    <Content Include="img tin tức\article_1584353401_715.jpg" />
+    <Content Include="img tin tức\article_1586835057_787.jpg" />
+    <Content Include="img tin tức\article_1587360022_68.jpg" />
+    <Content Include="img tin tức\article_1589852927_427.jpg" />
+    <Content Include="img tin tức\article_1592813884_909.jpg" />
+    <Content Include="img tin tức\article_1602059693_151.jpg" />
+    <Content Include="img tin tức\article_1602060317_996.jpg" />
+    <Content Include="img tin tức\blog.jpg" />
+    <Content Include="img tin tức\blog_web %281%29.jpg" />
+    <Content Include="img tin tức\blog_web %282%29.jpg" />
+    <Content Include="img tin tức\blog_web %283%29.jpg" />
+    <Content Include="img tin tức\blog_web %284%29.jpg" />
+    <Content Include="img tin tức\blog_web.jpg" />
+    <Content Include="img tin tức\trungthu_social_blog_web.jpg" />
+    <Content Include="login.js" />
+    <Content Include="Sản phẩm.css" />
+    <Content Include="tin tức.css" />
+    <Content Include="Tin tức.html" />
+    <Content Include="Trang chủ.css" />
+    <Content Include="Trang Chủ.html" />
+    <Content Include="img chi tiết sp\2475b23c-f9c8-ba00-005e-00173cd8ec0e.jpg" />
+    <Content Include="img chi tiết sp\2_52a7e59a1ac64a7c90f552a665391ac3_grande.webp.JPG" />
+    <Content Include="img chi tiết sp\a.jpg" />
+    <Content Include="img chi tiết sp\c5934533-1211-b100-eb41-001731c4c231.jpg" />
+    <Content Include="img chi tiết sp\d32-3_58d3de835ad4413fbda81f2269eb336b_grande.JPG" />
+    <Content Include="img chi tiết sp\g.png" />
+    <Content Include="img chi tiết sp\Untitled.png" />
+    <Content Include="img sp\117145229_671459360121734_2363737322278628777_n.jpg" />
+    <Content Include="img sp\BeFunky-collage-1-4.jpg" />
+    <Content Include="img sp\images.jfif" />
+    <Content Include="img sp\shop-do-unisex-o-da-nang.jpg" />
+    <Content Include="img sp\thiet-ke-shop-quan-ao-nu-1.jpg" />
+    <Content Include="img sp\tt1.jpg" />
+    <Content Include="img sp\tt3.jpg" />
+    <Content Include="img sp\tải xuống.jfif" />
+    <Content Include="img sp\áo sm 2.jpg" />
+    <Content Include="img sp\áo sm 3.jpg" />
+    <Content Include="img sp\áo sm 4.jpg" />
+    <Content Include="img sp\áo sm 5.jpg" />
+    <Content Include="img sp\áo sm 6.jpg" />
+    <Content Include="img sp\áo sm 7.jpg" />
+    <Content Include="img sp\áo sm 8.jpg" />
+    <Content Include="img sp\áo sm 9.jpg" />
+    <Content Include="img\1.png" />
+    <Content Include="img\117145229_671459360121734_2363737322278628777_n.jpg" />
+    <Content Include="img\117946331_757408921778654_4226967284847999425_n.jpg" />
+    <Content Include="img\118122752_601291420758337_4492213030839371451_n.jpg" />
+    <Content Include="img\118353514_332192154573549_219619043740770330_n.jpg" />
+    <Content Include="img\118442379_1664891067021306_8062419853371230387_n.jpg" />
+    <Content Include="img\1_eaa46a7d61184fd285f74242982cfce9_large.jpg" />
+    <Content Include="img\803c8ed1-0ada-0300-f622-00172b8693b2.jpg" />
+    <Content Include="img\a2297388-7d5b-7e00-0e3c-00173740b480.jpg" />
+    <Content Include="img\a259f55d-c585-0100-ec0c-00170cd911d1.jpg" />
+    <Content Include="img\BLACK-FRIDAY-2019-Shop-quan-ao-nu-o-Sai-Gon-FMStyle-SaiGon-2.jpg" />
+    <Content Include="img\ca294080-3b8a-44a1-b174-d244bc3495bf-THUN3AO-1280X1000.jpg" />
+    <Content Include="img\e.jpg" />
+    <Content Include="img\e786f0a9-89de-0400-2c88-00172b870602.jpg" />
+    <Content Include="img\f70e1122-5dfb-7700-8b83-00172158540d.jpg" />
+    <Content Include="img\pngtree-taobaosen-female-summer-women-s-banner-image_155405.jpg" />
+    <Content Include="img\ps.jpg" />
+    <Content Include="img\PSS.png" />
+    <Content Include="img\quang-cao-shop-ban-quan-ao-online-hieu-qua.jpg" />
+    <Content Include="img\rack-20of-20clothes-20-20hanging-1474962473383-crop-1474962482230.jpg" />
+    <Content Include="img\slide_2.jpg" />
+    <Content Include="img\Thiết-kế-shop-thời-trang-Hà-Đông-2-min.jpg" />
+    <Content Include="img\Untitled.png" />
+    <Content Include="Sản phẩm.html" />
+    <Content Include="thanh toán.css" />
+    <Content Include="thanh toán.html" />
+    <Content Include="Web.config" />
+    <Content Include="Đăng nhập.css" />
+    <Content Include="Đăng nhập.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img sp\áo sm 1.webp" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\haohaoshop - Web Deploy.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49235</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44398/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,170 @@
+﻿/*==Reset CSS==*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*==Style cơ bản cho website==*/
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+
+.header {
+    padding: 10px;
+    background-color: #4F4D4D;
+    text-align: right;
+}
+
+
+/*==Style cho menu===*/
+.menu ul {
+    background: #1F568B;
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+}
+
+.menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+    .menu a:hover {
+        background: #F1F1F1;
+        color: black;
+    }
+
+.icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.fb {
+    position: relative;
+    font-size: 15px;
+    left: -1028px;
+    color: azure;
+}
+
+.gg {
+    position: relative;
+    font-size: 17px;
+    top: 3px;
+    left: -1020px;
+    color: azure;
+}
+
+.ht {
+    position: absolute;
+    left: 185px;
+    color: white;
+    top: 14px;
+}
+
+.baghag {
+    position: absolute;
+    left: 150px;
+    font-size: 25px;
+    color: white;
+}
+
+.user {
+    position: absolute;
+    left: 1465px;
+    top: 50px;
+    font-size: 25px;
+    color: white;
+}
+
+
+.navbar-left img {
+    height: 50px;
+    position: absolute;
+}
+
+.navbar-right {
+    width: 130px;
+    position: absolute;
+    top: 52px;
+    right: 120px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 155%;
+    height: 400px;
+    background-color: #212121;
+}
+
+    .footer > div {
+        width: 340px;
+        margin: 20px;
+        color: black;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
+.footer1 {
+    align-self: center;
+}
+
+.form-group1 {
+    width: 280px;
+}
+
+.gui1 {
+    position: absolute;
+    top: 54.2px;
+    left: 1388px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 208%;
+    height: 30px;
+    background-color: black;
+}
+
+    .footer2 > div {
+        width: 1480px;
+        margin: 20px;
+        color: black;
+    }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+   /* background-color: black;*/
+}
+
+    .flex-container > div {
+      /*  background-color: #58257b;*/
+        width: 850px;
+        margin: 120px;
+        color: black;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+    .full{
+        background-color:lightgrey;
+    }

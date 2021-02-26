@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="admin.css" rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="header">
+        <a class="fb" href="https://www.facebook.com/haohaoo2012/"><i class="fab fa-facebook-f"></i></a>
+        <a class="gg" href=""><i class="fab fa-google-plus-g"></i></a>
+       
+        <a href="#" style="color:white;padding:15px;width:100px;"><b>Chăm sóc khách hàng</b></a>
+        <a href="Tin tức.html" style="color:white;padding:15px;width:100px;"><b>Tin tức</b> </a>
+        <a href="admin.html" style="color:white;padding:15px;width:100px;"><b>Admin</b></a>
+    </div>
+    <div class="menu">
+        <a class="navbar-left" href="#"><img src="img/117145229_671459360121734_2363737322278628777_n.jpg" /></a>
+        <a>
+            <form class="navbar-right">
+                <div class="icon">  <span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+                <div class="baghag">
+                    <b>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-handbag" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M8 1a2 2 0 0 0-2 2v2h4V3a2 2 0 0 0-2-2zm3 4V3a3 3 0 1 0-6 0v2H3.361a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.356a2.5 2.5 0 0 0 2.472-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 0 0 1 0V6h4z" />
+                        </svg>
+                    </b>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+        </a>
+        <div class="user">
+            <a> <i class="fas fa-user"></i></a>
+        </div>
+        <ul>
+            <li><a href="Trang Chủ.html"><b>TRANG CHỦ</b></a></li>
+            <li><a href="Giới thiệu.html"><b>GIỚI THIỆU</b></a></li>
+            <li><a href="#"><b>KHÁCH HÀNG</b></a></li>
+            <li><a href="Sản phẩm.html"><b>SẢN PHẨM</b></a></li>
+            <li><a href="Hệ thống cửa hàng.html"><b>HỆ THỐNG</b> </a></li>
+            <li><a href="#"><b>CỬA HÀNG</b></a></li>
+        </ul>
+    </div>
+    <div class="TK">
+        <div class="tab">
+            <button class="tablinks active">Sản phẩm chờ giao</button>
+            <button class="tablinks">Sản phẩm bán chạy</button>
+            <button class="tablinks">Doanh thu</button>
+            <button class="tablinks">Danh sách hóa đơn</button>
+            <button class="tablinks">Quản lí sản phẩm</button>
+            <button class="tablinks">Nhập sản phẩm mới</button>
+        </div>
+        <div id="Danh sách hóa đơn" class="tabcontent">
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+
+                th, td {
+                    padding: 15px;
+                    text-align: center;
+                }
+            </style>
+            <table border="1" ; width="100%">
+                <tr>
+                    <th>Id</th>
+                    <th>Ngày đặt hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Điện thoại</th>
+                    <th>Tổng tiền</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>15/10/2020</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>01234567891 </td>
+                    <td>320,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>15/10/2020</td>
+                    <td>Nguyễn Văn B</td>
+                    <td>01234567871 </td>
+                    <td>320,000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>15/10/2020</td>
+                    <td>Nguyễn Văn C</td>
+                    <td>01234567771 </td>
+                    <td>320,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>15/10/2020</td>
+                    <td>Nguyễn Văn T</td>
+                    <td>01234566691 </td>
+                    <td>320,000</td>
+                </tr>
+            </table>
+        </div>
+        <div id="Quản lí sản phẩm" class="tabcontent">
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+
+                th, td {
+                    padding: 15px;
+                    text-align: center;
+                }
+
+                th {
+                    color: blue;
+                }
+            </style>
+            <table border="1" ; width="100%">
+                <tr>
+                    <th>Id</th>
+                    <th>Mã số</th>
+                    <th>Tên hàng</th>
+                    <th>Tên loại</th>
+                    <th> Giá</th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>ST1</td>
+                    <td>Áo tay dài </td>
+                    <td> Áo </td>
+                    <td>320,000</td>
+                    <td><p><a href=url>Sửa</a></p></td>
+                    <td><p><a href=url>Xóa</a></p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>ST4</td>
+                    <td>Áo Kaki </td>
+                    <td> Áo </td>
+                    <td>320,000</td>
+                    <td><p><a href=url>Sửa</a></p></td>
+                    <td><p><a href=url>Xóa</a></p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>ST7</td>
+                    <td> Hoodie </td>
+                    <td> Áo khoác </td>
+                    <td>520,000</td>
+                    <td><p><a href=url>Sửa</a></p></td>
+                    <td><p><a href=url>Xóa</a></p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>ST4</td>
+                    <td> Sơ mi tay ngắn </td>
+                    <td> Áo sơm mi</td>
+                    <td>420,000</td>
+                    <td><p><a href=url>Sửa</a></p></td>
+                    <td><p><a href=url>Xóa</a></p></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div id="Sản phẩm chờ giao" class="tabcontent">
+            <h3>Sản phẩm đang giao</h3>
+            <img src="img admin/đang giao.jpg" width="800" height="500" />
+        </div>
+
+        <div id="Sản phẩm bán chạy" class="tabcontent">
+            <h3>Sản phẩm bán chạy</h3>
+            <img src="img admin/Sản phẩm bán chạy.jpg" width="800" height="500" />
+            <ul class="SPBC">
+                <li>
+                    <strong class="ADBC"></strong>
+                    <img src="img/a2297388-7d5b-7e00-0e3c-00173740b480.jpg" width="175" height="138" />
+                    <h4> <a href="#" style="color:black; position:relative;left:30px;"><b>Áo Thun Nam</b></a></h4>
+                    <p style="position:relative;left:30px;">Giá: 230.000 VNĐ</p>
+                </li>
+                <li>
+                    <strong class="ADBC"></strong>
+                    <img src="img/a259f55d-c585-0100-ec0c-00170cd911d1.jpg" width="100" />
+                    <h4><a href="#" style="position:relative;left:30px; top:-6px;color:black;"><b>Áo Sơmi Nam</b></a></h4>
+                    <p style="position:relative;left:30px; top:-9px;color:black;">Giá: 320.00 VNĐ </p>
+                </li>
+                <li>
+                    <strong class="ADBC"></strong>
+                    <img src="img/f70e1122-5dfb-7700-8b83-00172158540d.jpg" width="150" height="150" />
+                    <h4><a href="#" style="position:relative;left:40px; top:-14px; color:black;"><b>Áo Kaki</b></a></h4>
+                    <p style="position:relative;left:20px; top:-19px; color:black;">Giá: 300.000 VNĐ</p>
+                </li>
+                <li>
+                    <strong class="ADBC"></strong>
+                    <img src="img/1_eaa46a7d61184fd285f74242982cfce9_large.jpg" width="165" height="138" />
+                    <h4> <a href="#" style="color:black; position:relative;left:30px;"><b>Đầm Caro</b></a></h4>
+                    <p style="position:relative;left:30px;">Giá: 230.000 VNĐ</p>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="Doanh thu" class="tabcontent">
+            <h3>Thống kê doanh thu</h3>
+            <img src="img admin/Doanh thu.jpg" width="800" height="500" />
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var buttons = document.getElementsByClassName('tablinks');
+        var contents = document.getElementsByClassName('tabcontent');
+        function showContent(id) {
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            var content = document.getElementById(id);
+            content.style.display = 'block';
+        }
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function () {
+                var id = this.textContent;
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove("active");
+                }
+                this.className += " active";
+                showContent(id);
+            });
+        }
+        showContent('PHP');
+    </script>
+
+    <div class="footer">
+        <div class="footer1">
+            <img src="img/117145229_671459360121734_2363737322278628777_n.jpg" width="180" height="180" />
+            <h5 style="text-align:left; color:gray;">Địa chỉ: 279 Nguyễn Tri Phương, Quận 10, Thành Phố Hồ Chí Minh</h5>
+            <h5 style="text-align:left;color:gray;"> E-mail: nguyendoduchao@gmail.com</h5>
+            <h5 style="text-align:left;color:gray;">SĐT: 0564847296</h5>
+            <h5 style="text-align:left;color:gray;">FB: Hao Nguyen</h5>
+
+        </div>
+        <div>
+            <h3 style="text-align:left; color:gray;"><b>VỀ CHÚNG TÔI</b></h3>
+            <h5 style="text-align:left; color:gray;">Tổng quan về công ty</h5>
+            <h5 style="text-align:left; color:gray;">Lịch sử hình thành</h5>
+            <h5 style="text-align:left; color:gray;">Tầm nhìn-sứ mệnh</h5>
+            <h5 style="text-align:left; color:gray;">Câu chuyện thương hiệu</h5>
+        </div>
+        <div>
+            <h3 style="text-align:left; color:gray;"><b>HỖ TRỢ KHÁCH HÀNG</b></h3>
+            <h5 style="text-align:left; color:gray;">Phiếu quà tặng</h5>
+            <h5 style="text-align:left; color:gray;">Hướng dẫn</h5>
+            <h5 style="text-align:left; color:gray;">Thẻ VIP</h5>
+
+        </div>
+        <div>
+            <h3 style="text-align:left; color:gray;"><b>ĐĂNG KÝ BẢN TIN</b></h3>
+            <div class="form-group1">
+                <input type="text" class="form-control" placeholder="Địa chỉ Email">
+            </div>
+            <div class="btn2">
+                <button type="submit" class="btn btn-default-1">Gửi</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="ft">
+            <h6 style="position:absolute;top:1px; left:580px; color:gray;"><b>@All rights reserved.Thiết kế website nhóm Hào-ST001</b> </h6>
+        </div>
+    </div>
+</body>
+</html>
